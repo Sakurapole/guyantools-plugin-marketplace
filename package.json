@@ -1,0 +1,6 @@
+{
+  "name": "guyantools-plugin-marketplace",
+  "private": true,
+  "type": "module",
+  "scripts": { "validate": "node scripts/validate-catalog.mjs" }
+}
