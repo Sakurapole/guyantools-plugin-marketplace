@@ -3,5 +3,16 @@
   "marketplaceId": "sakurapole",
   "name": "Sakurapole GuYanTools Marketplace",
   "generatedAt": "2026-07-22T00:00:00.000Z",
-  "plugins": []
+  "plugins": [
+    {
+      "id": "guyantools.bilibili-media",
+      "name": "Bilibili Media",
+      "version": "0.1.0",
+      "description": "Bilibili URL parsing and media orchestration plugin.",
+      "repository": "https://github.com/Sakurapole/guyantools-bilibili-media",
+      "ref": "main",
+      "refType": "branch",
+      "resolvedCommit": "cb0c0f416e1e0dea2c0ac503075f28f1f66be429"
+    }
+  ]
 }
