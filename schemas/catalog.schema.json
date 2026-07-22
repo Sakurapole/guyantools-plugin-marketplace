@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["schemaVersion", "marketplaceId", "name", "plugins"],
+  "properties": {
+    "schemaVersion": { "const": "1.0" },
+    "marketplaceId": { "type": "string", "pattern": "^[a-z0-9][a-z0-9.-]*$" },
+    "name": { "type": "string", "minLength": 1 },
+    "plugins": { "type": "array", "items": { "$ref": "#/$defs/plugin" } }
+  },
+  "$defs": {
+    "plugin": {
+      "type": "object",
+      "required": ["id", "name", "version", "repository", "ref", "refType", "resolvedCommit"],
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "version": { "type": "string" },
+        "repository": { "type": "string", "pattern": "^https://" },
+        "ref": { "type": "string" },
+        "refType": { "enum": ["branch", "tag", "commit"] },
+        "resolvedCommit": { "type": "string", "pattern": "^[0-9a-fA-F]{7,64}$" }
+      }
+    }
+  }
+}
