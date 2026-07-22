@@ -10,8 +10,8 @@
       "version": "0.1.0",
       "description": "Bilibili URL parsing and media orchestration plugin.",
       "repository": "https://github.com/Sakurapole/guyantools-bilibili-media",
-      "ref": "main",
-      "refType": "branch",
+      "ref": "v0.1.0",
+      "refType": "tag",
       "resolvedCommit": "cb0c0f416e1e0dea2c0ac503075f28f1f66be429"
     }
   ]
