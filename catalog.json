@@ -7,17 +7,17 @@
     {
       "id": "guyantools.bilibili-media",
       "name": "Bilibili Media",
-      "version": "0.2.4",
+      "version": "0.2.5",
       "description": "Bilibili URL parsing and media orchestration plugin.",
       "hostVersionRange": ">=1.0.0",
-      "permissions": ["network.fetch", "downloads.manage", "jobs.manage", "files.read", "files.write", "tools.ffmpeg", "media.preview", "media.transcode", "media.tag", "system.dialog", "storage.self", "ui.contribute", "observability.logs"],
+      "permissions": ["network.fetch", "downloads.manage", "jobs.manage", "files.read", "files.write", "tools.ffmpeg", "media.preview", "media.transcode", "media.tag", "system.dialog", "storage.self", "secrets.self", "ui.contribute", "observability.logs"],
       "capabilities": [{ "id": "guyantools.bilibili-media.source", "kind": "media-source", "operations": ["resolve", "select-stream", "metadata"], "match": { "hosts": ["bilibili.com", "b23.tv"] } }],
       "manifestPath": "guyantools.plugin.json",
       "trustLevel": "sandboxed",
       "repository": "https://github.com/Sakurapole/guyantools-bilibili-media",
-      "ref": "v0.2.4",
+      "ref": "v0.2.5",
       "refType": "tag",
-      "resolvedCommit": "c0a0e100b2fe56b8a6ca9b14118cf70462bcc466"
+      "resolvedCommit": "04b66d4fbbdedc114482feb17d0e9034f4ead695"
     }
   ]
 }
